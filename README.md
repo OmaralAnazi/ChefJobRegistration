@@ -19,5 +19,5 @@ The "Chef Job Registration" project is a guided exercise by Scrimba Front-end Pr
 Clone the repository and open `index.html` on any device to fill out the registration form.
 
 ## Demo
-[View Live Project](#)
+[View Live Project](https://gregarious-parfait-ca991a.netlify.app/)
 
