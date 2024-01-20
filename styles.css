@@ -1,0 +1,215 @@
+*, *::before, *::after {
+    box-sizing: border-box;  
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+
+.underline {
+    text-decoration: underline;
+}
+
+h1, 
+.beta-text, 
+.top-text {
+    text-shadow: 2px 2px 1px black;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin: 0.167em 0;
+}
+
+a,
+a:visited {
+    color: #F95738;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #8b301e;
+}
+
+p {
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.35;
+}
+
+.beta-text { 
+    font-weight: 900;
+}
+
+.subheading {
+    color: #575757;
+    font-weight: 900;  
+    margin-bottom: 0.5em;
+}
+
+.beta-text,
+.top-text,
+.subheading {
+    text-transform: uppercase;
+}
+
+.top-text {
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding-top: 0.25em;
+    border-top: 5px solid;
+    order: -1; /* represent it at first */
+    margin: 0 auto;
+}
+
+.fine-print {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #858585;
+}
+
+/* Flex containers */
+
+.intro,
+.main-content {
+    display: flex;
+    flex-direction: column; 
+    padding-left: 2em;
+    padding-right: 2em;   
+}
+
+/* Intro */
+
+.intro { 
+    justify-content: space-between;
+    min-height: 325px;
+    text-align: center;
+    color: #fff;
+    background: gray url("images/intro-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 1.5em;
+}
+
+/* Main content */
+   
+.main-content {
+    text-align: center;
+    align-items: center;
+    padding-top: 2.5em;
+}
+
+.main-content p,
+form {
+    max-width: 720px;
+}
+
+/* Form */
+
+input,
+button {
+    font-family: inherit;
+    text-align: center;
+    width: 90%; 
+    border-radius: 5px;   
+}
+
+input {
+    padding: 0.5em;
+    margin-bottom: 0.75em;
+    border: 2px solid #d1d5db;
+}
+
+input:focus {
+    outline: none;
+    border-color: #F95738;
+    background-color: #e6e8ec;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 1em 0;
+    border: none;
+    cursor: pointer;
+}
+
+.register-btn {
+    color: white;
+    background-color: #F95738;
+    margin-top: 0.5em;    
+}
+
+.register-btn:hover,
+.register-btn:focus {
+    background-color: #8b301e;
+}
+
+/* Media queries */
+
+@media (max-width: 374px) {
+    html {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 3.333rem;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 474px) {
+    html {
+        font-size: 14.5px;
+    }
+}
+
+@media (min-width: 576px) {
+    body {
+        display: flex;
+    }
+    
+    h1 {
+        font-size: 5vw;
+    }
+    
+    h2 {
+        font-size: 2.625rem;
+    }
+    
+    .beta-text {
+        font-size: 1.25rem;
+    }
+    
+    .intro,
+    .main-content {
+        width: 50%;
+    }
+    
+    .intro {
+        min-height: 100vh;
+    }
+    
+    .main-content {
+        justify-content: center;
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 1500px) {
+    html {
+        font-size: 24px;
+    }
+}
